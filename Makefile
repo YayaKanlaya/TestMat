@@ -1,10 +1,10 @@
 all: TestMat
 
 TestMat.o:
-	gcc -c TestMat.c
+	g++ -c TestMat.cpp
 
 TestMat: TestMat.o
-	gcc TestMat.o -o TestMat
+	g++ TestMat.o -o TestMat
 	
 clean:
 	@echo "Clean was called"
